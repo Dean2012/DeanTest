@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rkb-oo-9x0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainUI ViewC Ontroller-->
+        <scene sceneID="YBu-iY-v3k">
+            <objects>
+                <viewController id="bSo-fm-sEe" customClass="MainUIViewCOntroller" customModule="DeanTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ik7-hh-paY"/>
+                        <viewControllerLayoutGuide type="bottom" id="XGw-G2-C7W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3As-JD-Z1A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Mlm-qT-eZr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6GZ-XQ-YmM">
+                                    <rect key="frame" x="0.0" y="28" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </tableView>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mlm-qT-eZr" firstAttribute="leading" secondItem="3As-JD-Z1A" secondAttribute="leadingMargin" constant="-16" id="54C-Ff-DPF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mlm-qT-eZr" secondAttribute="trailing" constant="-16" id="JSj-qe-DaN"/>
+                            <constraint firstItem="Mlm-qT-eZr" firstAttribute="top" secondItem="3As-JD-Z1A" secondAttribute="topMargin" constant="20" id="KQN-gu-GNj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Mlm-qT-eZr" secondAttribute="bottom" constant="-28" id="Kpy-kb-PVz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Mlm-qT-eZr" secondAttribute="bottom" constant="-28" id="NC2-1c-8vD"/>
+                            <constraint firstItem="Mlm-qT-eZr" firstAttribute="top" secondItem="3As-JD-Z1A" secondAttribute="topMargin" id="NFS-kn-Xdn"/>
+                            <constraint firstItem="Mlm-qT-eZr" firstAttribute="leading" secondItem="3As-JD-Z1A" secondAttribute="leadingMargin" constant="-16" id="Nd5-hw-Gwg"/>
+                            <constraint firstItem="Mlm-qT-eZr" firstAttribute="leading" secondItem="3As-JD-Z1A" secondAttribute="leadingMargin" constant="-16" id="Wuw-ox-FXW"/>
+                            <constraint firstItem="Mlm-qT-eZr" firstAttribute="top" secondItem="ik7-hh-paY" secondAttribute="bottom" constant="8" id="Ygw-E3-fVo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mlm-qT-eZr" secondAttribute="trailing" constant="-16" id="dBQ-Uu-iFU"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Mlm-qT-eZr" secondAttribute="bottom" constant="-28" id="fuK-h6-1zE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mlm-qT-eZr" secondAttribute="trailing" constant="-16" id="hcw-VI-Qta"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="54C-Ff-DPF"/>
+                                <exclude reference="JSj-qe-DaN"/>
+                                <exclude reference="KQN-gu-GNj"/>
+                                <exclude reference="Kpy-kb-PVz"/>
+                                <exclude reference="Nd5-hw-Gwg"/>
+                                <exclude reference="Ygw-E3-fVo"/>
+                                <exclude reference="dBQ-Uu-iFU"/>
+                                <exclude reference="fuK-h6-1zE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="3hB-vq-hwo"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="6GZ-XQ-YmM" id="ynB-Q9-0tc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cQ-4P-CCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696.5" y="312"/>
+        </scene>
+        <!--Label View Controller-->
+        <scene sceneID="7Oh-qv-KZD">
+            <objects>
+                <viewController storyboardIdentifier="LabelVC" id="5T7-Ad-PUp" customClass="LabelViewController" customModule="DeanTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aN3-9r-PFc"/>
+                        <viewControllerLayoutGuide type="bottom" id="c3E-Ib-09Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ndh-nV-IO0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xu-jU-0R3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1696.5" y="988"/>
+        </scene>
+        <!--Segmented View Controller-->
+        <scene sceneID="6EP-EK-kb6">
+            <objects>
+                <viewController storyboardIdentifier="SegmentedVC" id="rS0-ee-v5B" customClass="SegmentedViewController" customModule="DeanTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5bJ-Qu-WCH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dvf-J4-vT2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0xG-UF-9uo">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJS-Gn-bT4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424" y="982"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dDi-OG-AYW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rkb-oo-9x0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rnN-9X-buF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bSo-fm-sEe" kind="relationship" relationship="rootViewController" id="Gj7-5D-00q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4e9-bS-HLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="312"/>
+        </scene>
+        <!--Local Storage View Controller-->
+        <scene sceneID="AAb-Zq-Fc8">
+            <objects>
+                <viewController storyboardIdentifier="LocalStorageVC" id="qNF-zF-dQ9" customClass="localStorageViewController" customModule="DeanTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N3a-tN-VNW"/>
+                        <viewControllerLayoutGuide type="bottom" id="PkW-g2-yq0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FU6-qi-meH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDO-74-qcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="988"/>
+        </scene>
+    </scenes>
+</document>
